@@ -1,35 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(10,10,10);
-    color: rgb(240,240,240);
+    background-color: #2b2b2b;
+    color: #FFF;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100vw;
     font-family: Verdana, Tahoma, sans-serif;
-}
-
-header {
-    width: 95%;
-    max-width: 788px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 12px;
-    margin-top: 15px;
-}
-
-.share-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(240,240,240);
-}
-
-.share-button svg {
-    margin-left: 12px;
-    margin-top: 10px;
-    color: rgb(0,0,0);
+    user-select: none;
 }
 
 .container {
@@ -41,23 +20,25 @@ header {
     align-items: center;
 }
 
-h1 {
-    font-size: 20px;
-    margin-bottom: 30px;
+/* Image Style */
+
+.image-container {
+    height: 128px;
+    width: 128px;
+    border-radius: 100%;
+    overflow: hidden;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(240,240,240);
-}
+/* Link Style */
 
 .tile {
     width: 100%;
-    background-color: rgb(37,37,37);
+    background-color: #1b1b1b;
     margin: 7px;
     border-radius: 17px;
     display: flex;
     justify-content: space-between;
+    transition: 0.4s ease-in-out;
 }
 
 .tile:hover {
@@ -78,20 +59,37 @@ a {
     margin-top: 10px;
 }
 
-
-.image-container {
-    height: 96px;
-    width: 96px;
-    border-radius: 48px;
-    overflow: hidden;
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(240,240,240);
 }
 
-.image-container img {
-    height: 100%;
+.share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+    color: rgb(0,0,0);
 }
 
 .icon {
     margin: 4px 8px;
     width: 44px;
     height: 44px;
+}
+
+/* Others */
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.space {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
